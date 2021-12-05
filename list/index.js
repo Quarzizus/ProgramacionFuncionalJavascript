@@ -9,9 +9,9 @@ const addRow = () => {
   list.map((box) => {
     const row = document.createElement("tr");
     Object.values(box).map((value) => {
-      const th = document.createElement("th");
-      th.innerText = value;
-      row.appendChild(th);
+      const td = document.createElement("td");
+      td.innerText = value;
+      row.appendChild(td);
     });
     listItems.appendChild(row);
   });

@@ -17,3 +17,5 @@ const addOneB = (obj) => {
 const timesTwoB = (obj) => {
   Object.assign({}, obj, { value: obj.value * 1 });
 };
+
+export { b, timesTwoB, addOneB };
