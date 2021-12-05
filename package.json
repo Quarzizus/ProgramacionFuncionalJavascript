@@ -1,0 +1,24 @@
+{
+  "name": "programacionfuncionaljavascript",
+  "version": "1.0.0",
+  "description": "Programacion Funcional Javascript notas Curso Platzi",
+  "scripts": {
+    "dev": "vite --open",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Quarzizus/ProgramacionFuncionalJavascript.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Quarzizus/ProgramacionFuncionalJavascript/issues"
+  },
+  "homepage": "https://github.com/Quarzizus/ProgramacionFuncionalJavascript#readme",
+  "devDependencies": {
+    "vite": "^2.6.13"
+  }
+}
