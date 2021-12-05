@@ -37,4 +37,12 @@ const toValidate = () => {
   !invalidateValues && list.push(values);
 };
 
-export { values, toValidate, invalidateValues };
+// clear inputs
+
+const clearInputs = () => {
+  calories.value = null;
+  protein.value = null;
+  description.value = null;
+  carbs.value = null;
+};
+export { values, toValidate, invalidateValues, clearInputs };

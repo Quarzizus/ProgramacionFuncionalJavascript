@@ -1,4 +1,4 @@
-import { invalidateValues } from "../inputs/values";
+import { invalidateValues, clearInputs } from "../inputs/values";
 
 const list = [];
 
@@ -15,6 +15,7 @@ const addRow = () => {
     });
     listItems.appendChild(row);
   });
+  clearInputs();
 };
 
 export { list, addRow };
