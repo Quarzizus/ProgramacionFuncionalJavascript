@@ -1,4 +1,5 @@
-import { values, toValidate } from "./inputs/values";
+import { toValidate } from "./inputs/values";
+import { addRow } from "./list/index";
 // const compose =
 //   (...functions) =>
 //   (data) =>
@@ -6,6 +7,6 @@ import { values, toValidate } from "./inputs/values";
 
 const addButton = document.getElementById("add");
 addButton.addEventListener("click", () => {
-  console.log(toValidate(values), values);
-  // console.log(values);
+  toValidate();
+  addRow();
 });

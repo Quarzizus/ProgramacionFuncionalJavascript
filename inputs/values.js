@@ -1,8 +1,10 @@
 import { calories, carbs, description, protein } from "./index";
+import { list } from "../list";
 
-//inputs
+// inputs
 const inputs = [calories, carbs, description, protein];
 
+// values
 let values = {
   description: null,
   calories: null,
@@ -22,12 +24,17 @@ inputs.forEach((input) => {
 });
 
 // validate
+let invalidateValues = true;
 const toValidate = () => {
   [...inputs].map((input) => {
-    !input.value
-      ? input.classList.add("is-invalid")
-      : input.classList.remove("is-invalid");
+    if (!input.value) {
+      input.classList.add("is-invalid");
+    } else {
+      input.classList.remove("is-invalid");
+    }
   });
+  invalidateValues = Object.values(values).some((value) => !value);
+  !invalidateValues && list.push(values);
 };
 
-export { values, toValidate };
+export { values, toValidate, invalidateValues };
