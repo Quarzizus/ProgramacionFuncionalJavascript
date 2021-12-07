@@ -51,7 +51,7 @@ td {
   padding: 0.75rem;
 }
 
-#total {
+.totaltitle {
   font-weight: bold;
 }
 
@@ -65,10 +65,9 @@ tbody tr:nth-child(odd) {
   border-top: 1px solid var(--border);
 }
 
-.form-container form {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+.form-container form div {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
 }
 
 input {
@@ -136,7 +135,7 @@ button.remove::before {
 }
 
 button.remove {
-  background-color: var(--button-default);
+  background-color: red;
 }
 
 button.remove:hover {

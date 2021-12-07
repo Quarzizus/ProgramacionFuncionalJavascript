@@ -1,5 +1,4 @@
 import { calories, carbs, description, protein } from "./index";
-import { list } from "../list";
 
 // inputs
 const inputs = [calories, carbs, description, protein];
@@ -34,7 +33,6 @@ const toValidate = () => {
     }
   });
   invalidateValues = Object.values(values).some((value) => !value);
-  !invalidateValues && list.push(values);
 };
 
 // clear inputs

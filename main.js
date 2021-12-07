@@ -1,5 +1,5 @@
-import { toValidate } from "./inputs/values";
-import { addRow } from "./list/index";
+import { clearInputs, toValidate } from "./inputs/values";
+import { addRow, renderTotal } from "./list/index";
 // const compose =
 //   (...functions) =>
 //   (data) =>
@@ -8,5 +8,8 @@ import { addRow } from "./list/index";
 const addButton = document.getElementById("add");
 addButton.addEventListener("click", () => {
   toValidate();
-  addRow();
+  addRow(() => {
+    clearInputs();
+    renderTotal();
+  });
 });
