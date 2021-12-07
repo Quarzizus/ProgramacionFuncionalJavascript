@@ -1,5 +1,5 @@
-import { clearInputs, toValidate } from "./inputs/values";
-import { addRow, renderTotal } from "./list/index";
+import { clearInputs, toValidate } from "./inputs/utils";
+import { addRow, renderTotal } from "./list/utils";
 // const compose =
 //   (...functions) =>
 //   (data) =>

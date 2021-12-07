@@ -1,9 +1,5 @@
-import { calories, carbs, description, protein } from "./index";
+import { inputs } from "./index";
 
-// inputs
-const inputs = [calories, carbs, description, protein];
-
-// values
 let values = {
   description: null,
   calories: null,
