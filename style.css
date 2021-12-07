@@ -154,3 +154,12 @@ button.edit {
 button.edit:hover {
   background-color: var(--edit);
 }
+
+@media screen and (min-width: 320px) and (max-width: 400px) {
+  .table-container {
+    padding: 0;
+  }
+  .table-container table th {
+    padding: 10px 0;
+  }
+}
